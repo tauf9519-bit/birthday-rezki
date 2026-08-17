@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Rezki Dwi Ramadhani ❤️</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3025;
+
+    background-color: #f5f0e4;
+
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            rgba(100,75,40,0.025) 0px,
+            rgba(100,75,40,0.025) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   BUNGA 4 CORNER
+================================ */
+
+.corner {
+    position: fixed;
+    width: 190px;
+    height: 190px;
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0.75;
+}
+
+.corner-tl {
+    top: -35px;
+    left: -35px;
+    transform: rotate(-10deg);
+}
+
+.corner-tr {
+    top: -35px;
+    right: -35px;
+    transform: rotate(90deg);
+}
+
+.corner-bl {
+    bottom: -35px;
+    left: -35px;
+    transform: rotate(-90deg);
+}
+
+.corner-br {
+    bottom: -35px;
+    right: -35px;
+    transform: rotate(180deg);
+}
+
+.corner::before,
+.corner::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 55px;
+    border: 3px solid #b79550;
+    border-radius: 100% 0 100% 0;
+    opacity: 0.65;
+}
+
+.corner::before {
+    top: 45px;
+    left: 35px;
+    transform: rotate(35deg);
+}
+
+.corner::after {
+    top: 85px;
+    left: 5px;
+    transform: rotate(-15deg);
+}
+
+.corner {
+    background:
+        radial-gradient(
+            circle at 55% 45%,
+            #d6b66b 0 7px,
+            transparent 8px
+        ),
+        radial-gradient(
+            ellipse at 45% 35%,
+            transparent 0 12px,
+            #c7a45d 13px 17px,
+            transparent 18px
+        ),
+        radial-gradient(
+            ellipse at 65% 35%,
+            transparent 0 12px,
+            #c7a45d 13px 17px,
+            transparent 18px
+        ),
+        radial-gradient(
+            ellipse at 45% 55%,
+            transparent 0 12px,
+            #c7a45d 13px 17px,
+            transparent 18px
+        ),
+        radial-gradient(
+            ellipse at 65% 55%,
+            transparent 0 12px,
+            #c7a45d 13px 17px,
+            transparent 18px
+        );
+}
+
+
+/* ================================
+   HALAMAN AWAL
+================================ */
+
+#intro {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    width: 90%;
+    max-width: 650px;
+
+    padding: 45px 35px;
+
+    background: rgba(255,255,255,0.65);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(180,145,70,0.35);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(100,75,30,0.18);
+
+    animation: muncul 1s ease;
+}
+
+.cake {
+    font-size: 85px;
+    animation: goyang 1.5s infinite;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 15px 0;
+
+    color: #8a6425;
+
+    text-shadow:
+        0 3px 10px rgba(120,90,30,0.15);
+}
+
+.nama {
+    font-size: 30px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+    color: #5b4525;
+}
+
+.ucapan {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+#countdown {
+    margin-top: 25px;
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background: rgba(180,145,70,0.12);
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #6d5228;
+
+    transition: 0.5s;
+}
+
+button {
+    margin-top: 25px;
+
+    padding: 17px 40px;
+
+    border: 1px solid #c5a45d;
+
+    border-radius: 50px;
+
+    background: #fffaf0;
+
+    color: #79591f;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 10px 25px rgba(120,90,30,0.18);
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #f8edd1;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* ================================
+   KEJUTAN
+================================ */
+
+#surprise {
+    display: none;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.hero-icon {
+    font-size: 90px;
+    animation: goyang 1.5s infinite;
+}
+
+.hero h2 {
+    font-size: 60px;
+
+    margin: 25px 0;
+
+    color: #8a6425;
+
+    animation: zoom 1.5s ease;
+}
+
+.hero p {
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+.scroll-hint {
+    margin-top: 40px;
+
+    font-size: 18px;
+    opacity: 0.7;
+
+    animation: naikTurun 1.5s infinite;
+}
+
+
+/* ================================
+   UCAPAN
+================================ */
+
+.message {
+    width: 90%;
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding-bottom: 150px;
+}
+
+.message h2 {
+    font-size: 42px;
+
+    margin-bottom: 60px;
+
+    color: #8a6425;
+}
+
+.doa {
+    font-size: 22px;
+
+    line-height: 1.9;
+
+    background: rgba(255,255,255,0.58);
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    border: 1px solid rgba(180,145,70,0.3);
+
+    box-shadow:
+        0 15px 50px rgba(100,75,30,0.12);
+
+    text-align: left;
+}
+
+.doa p {
+    margin: 0 0 28px 0;
+}
+
+.doa p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   ENDING
+================================ */
+
+.ending {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+.ending h2 {
+    font-size: 60px;
+
+    color: #8a6425;
+
+    animation: zoom 2s ease;
+}
+
+.ending p {
+    font-size: 25px;
+
+    line-height: 2;
+}
+
+
+/* ================================
+   KOMENTAR PALING BAWAH
+================================ */
+
+.comments {
+    width: 90%;
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 100px 0 80px;
+
+    text-align: center;
+}
+
+.comments h2 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    color: #8a6425;
+}
+
+.comment-subtitle {
+    font-size: 18px;
+
+    opacity: 0.85;
+
+    margin-bottom: 40px;
+}
+
+.comment-box {
+    background: rgba(255,255,255,0.58);
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(180,145,70,0.3);
+
+    backdrop-filter: blur(15px);
+}
+
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+
+    margin-bottom: 15px;
+
+    padding: 15px 18px;
+
+    border: 1px solid rgba(180,145,70,0.25);
+
+    border-radius: 15px;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    background: rgba(255,255,255,0.8);
+}
+
+.comment-box textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+#daftarKomentar {
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.komentar {
+    text-align: left;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.58);
+
+    border-radius: 20px;
+
+    border-left: 4px solid #b8954a;
+
+    animation: munculKomentar 0.5s ease;
+}
+
+.komentar-nama {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    color: #79591f;
+}
+
+.komentar-isi {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    word-wrap: break-word;
+}
+
+
+/* ================================
+   CREDIT
+================================ */
+
+.credit {
+    margin-top: 35px;
+
+    font-size: 16px;
+
+    color: #8a6425;
+
+    opacity: 0.75;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================================
+   CONFETTI
+================================ */
+
+.confetti {
+    position: fixed;
+
+    top: -20px;
+
+    width: 10px;
+    height: 10px;
+
+    z-index: 100;
+
+    pointer-events: none;
+
+    animation: jatuh 5s linear forwards;
+}
+
+
+/* ================================
+   ANIMASI
+================================ */
+
+@keyframes muncul {
+
+    from {
+        opacity: 0;
+
+        transform:
+            scale(0.5)
+            translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
+
+@keyframes goyang {
+
+    0%,100% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes zoom {
+
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes naikTurun {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes jatuh {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+@keyframes munculKomentar {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ================================
+   HP
+================================ */
+
+@media(max-width:600px) {
+
+    .corner {
+        width: 130px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .nama {
+        font-size: 25px;
+    }
+
+    .ucapan {
+        font-size: 16px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 19px;
+    }
+
+    .message h2 {
+        font-size: 32px;
+    }
+
+    .doa {
+
+        font-size: 19px;
+
+        line-height: 1.9;
+
+        padding: 28px 22px;
+    }
+
+    .comments h2 {
+        font-size: 32px;
+    }
+
+    .comment-box {
+        padding: 20px;
+    }
+
+    .ending h2 {
+        font-size: 40px;
+    }
+
+    .ending p {
+        font-size: 20px;
+    }
+
+    .credit {
+        font-size: 14px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- BUNGA 4 CORNER -->
+
+<div class="corner corner-tl"></div>
+<div class="corner corner-tr"></div>
+<div class="corner corner-bl"></div>
+<div class="corner corner-br"></div>
+
+
+<!-- ================================
+     HALAMAN AWAL
+================================ -->
+
+<section id="intro">
+
+    <div class="card">
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <h1>
+            🎉 HAPPY BIRTHDAY 🎉
+        </h1>
+
+        <div class="nama">
+            Untuk: Rezki Dwi Ramadhani ❤️
+        </div>
+
+        <div class="ucapan">
+
+            Selamat ulang tahun,
+            Rezki Dwi Ramadhani! 🥳
+
+            <br><br>
+
+            Ada sedikit kejutan
+            yang dibuat khusus untuk kamu.
+
+            <br><br>
+
+            Tekan tombol di bawah
+            kalau sudah siap. ❤️
+
+        </div>
+
+        <div id="countdown">
+            Menghitung...
+        </div>
+
+        <button onclick="mulai()">
+            🎁 Buka Kejutan
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     KEJUTAN
+================================ -->
+
+<section id="surprise">
+
+
+    <!-- HERO -->
+
+    <div class="hero">
+
+        <div>
+
+            <div class="hero-icon">
+                🎂
+            </div>
+
+            <h2>
+                🎉 HAPPY BIRTHDAY,
+                <br>
+                REZKI DWI RAMADHANI! 🎉
+            </h2>
+
+            <p>
+                Ada sedikit pesan
+                yang ingin disampaikan...
+            </p>
+
+            <div class="scroll-hint">
+                ↓ Scroll atau diam saja ↓
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         UCAPAN
+    ================================= -->
+
+    <div class="message">
+
+        <h2>
+            💌 Untuk Rezki Dwi Ramadhani
+        </h2>
+
+        <div class="doa">
+
+            <p>
+                Selamat ulang tahun, Rezki Dwi Ramadhani! 🎂🎉
+                Semoga di umur yang baru ini kamu selalu diberikan
+                kesehatan, kebahagiaan, ketenangan, dan kelancaran
+                dalam segala hal.
+            </p>
+
+            <p>
+                Semoga semua cita-cita dan impian yang selama ini kamu
+                kejar bisa tercapai satu per satu, dan setiap usaha yang
+                kamu lakukan bisa membuahkan hasil yang terbaik.
+                Semoga kamu selalu diberikan rezeki yang lancar,
+                dikelilingi orang-orang baik, dan dipertemukan dengan
+                banyak kesempatan yang membawa hal-hal positif dalam hidup kamu.
+            </p>
+
+            <p>
+                Kalau nanti ada masalah atau sesuatu yang nggak sesuai
+                dengan rencana, semoga kamu selalu diberikan kekuatan,
+                kesabaran, dan pikiran yang tenang untuk melewatinya.
+                Jangan gampang menyerah hanya karena sesuatu belum berhasil,
+                karena setiap orang punya waktunya masing-masing dan proses
+                setiap orang juga berbeda.
+            </p>
+
+            <p>
+                Semoga kamu terus percaya sama diri sendiri, berani
+                mencoba hal-hal baru, dan nggak takut untuk mengejar
+                apa yang memang kamu inginkan. Semoga di tahun ini ada
+                lebih banyak momen seru, pengalaman baru, tawa, cerita,
+                dan kenangan yang nantinya bisa kamu ingat dengan senyum.
+            </p>
+
+            <p>
+                Semoga kamu juga selalu punya waktu untuk menikmati
+                hal-hal kecil yang bikin bahagia, nggak terlalu memikirkan
+                hal-hal yang nggak bisa kamu ubah, dan selalu punya alasan
+                untuk tetap semangat menjalani hari.
+            </p>
+
+            <p>
+                Semoga keluarga dan orang-orang yang kamu sayangi selalu
+                diberikan kesehatan dan kebahagiaan, dan semoga hubungan
+                kamu dengan mereka selalu dipenuhi hal-hal baik.
+                Semoga setiap kegagalan yang pernah kamu alami bisa menjadi
+                pelajaran, setiap masalah bisa membuat kamu semakin kuat,
+                dan setiap keberhasilan bisa membuat kamu semakin bersyukur.
+            </p>
+
+            <p>
+                Semoga tahun ini menjadi tahun yang lebih baik dari sebelumnya,
+                penuh kesempatan baru, pencapaian baru, dan banyak hal yang
+                nggak pernah kamu sangka sebelumnya.
+            </p>
+
+            <p>
+                Intinya, semoga semua hal baik datang ke hidup kamu,
+                semua doa yang baik perlahan menjadi kenyataan, dan semoga
+                Rezki Dwi Ramadhani selalu sehat, sukses, bahagia,
+                dimudahkan dalam segala urusan, dan tetap menjadi diri sendiri.
+            </p>
+
+            <p>
+                Teruslah melangkah, teruslah bermimpi, dan jangan lupa
+                menikmati perjalanan yang sedang kamu jalani.
+                Semoga ulang tahun kali ini menjadi awal dari banyak hal baik
+                yang akan datang ke depannya.
+            </p>
+
+            <p>
+                Happy Birthday, Rezki! 🥳🎂❤️✨
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         ENDING
+    ================================= -->
+
+    <div class="ending">
+
+        <div>
+
+            <div style="font-size:90px;">
+                🎂
+            </div>
+
+            <h2>
+                🎉 HAPPY BIRTHDAY,
+                <br>
+                REZKI DWI RAMADHANI! 🎉
+            </h2>
+
+            <p>
+
+                Semoga panjang umur. ❤️
+                <br>
+
+                Semoga selalu sehat. ❤️
+                <br>
+
+                Semoga semua impianmu tercapai. ✨
+                <br>
+
+                Semoga selalu bahagia. 🥳
+
+                <br><br>
+
+                Semoga tahun ini menjadi
+                salah satu tahun terbaik
+                dalam hidupmu.
+
+                <br><br>
+
+                ❤️ 🎂 🎁 🥳 ✨
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         KOMENTAR PALING BAWAH
+    ================================= -->
+
+    <div
+        class="comments"
+        id="commentsSection"
+    >
+
+        <h2>
+            💌 Tulis Pesan Buat Rezki
+        </h2>
+
+        <p class="comment-subtitle">
+            Kasih ucapan, doa, atau pesan terbaikmu
+            untuk Rezki Dwi Ramadhani ❤️
+        </p>
+
+        <div class="comment-box">
+
+            <input
+                type="text"
+                id="namaKomentar"
+                placeholder="Nama kamu..."
+                maxlength="30"
+            >
+
+            <textarea
+                id="isiKomentar"
+                placeholder="Tulis pesan buat Rezki..."
+                maxlength="300"
+            ></textarea>
+
+            <button onclick="kirimKomentar()">
+                💌 Kirim Pesan
+            </button>
+
+        </div>
+
+        <div id="daftarKomentar"></div>
+
+        <div class="credit">
+            ✨ Ini Dibuat Oleh Taufan Untuk Rezki ❤️
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- ================================
+     LAGU
+================================ -->
+
+<audio
+    id="lagu"
+    src="lagu.mp3"
+    preload="auto">
+</audio>
+
+
+<script>
+
+/* ================================
+   COUNTDOWN
+================================ */
+
+const tanggalUlangTahun =
+    new Date(
+        "2026-09-06T00:00:00"
+    ).getTime();
+
+
+function updateCountdown() {
+
+    const sekarang =
+        new Date().getTime();
+
+    const jarak =
+        tanggalUlangTahun -
+        sekarang;
+
+    const countdown =
+        document.getElementById(
+            "countdown"
+        );
+
+
+    /* ============================
+       SUDAH HARI ULANG TAHUN
+    ============================ */
+
+    if (jarak <= 0) {
+
+        countdown.innerHTML = `
+            🎉 <strong>SEKARANG!</strong> 🎉
+            <br>
+            🎂 HAPPY BIRTHDAY REZKI! ❤️
+        `;
+
+        countdown.style.fontSize =
+            "24px";
+
+        countdown.style.animation =
+            "zoom 1s infinite";
+
+        return;
+    }
+
+
+    /* ============================
+       MASIH COUNTDOWN
+    ============================ */
+
+    const hari =
+        Math.floor(
+            jarak /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const jam =
+        Math.floor(
+            (jarak %
+            (1000 * 60 * 60 * 24))
+            /
+            (1000 * 60 * 60)
+        );
+
+
+    const menit =
+        Math.floor(
+            (jarak %
+            (1000 * 60 * 60))
+            /
+            (1000 * 60)
+        );
+
+
+    const detik =
+        Math.floor(
+            (jarak %
+            (1000 * 60))
+            /
+            1000
+        );
+
+
+    countdown.innerHTML =
+
+        "⏳ " +
+        hari +
+        " hari " +
+        jam +
+        " jam " +
+        menit +
+        " menit " +
+        detik +
+        " detik lagi ❤️";
+}
+
+
+updateCountdown();
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+/* ================================
+   BUKA KEJUTAN
+================================ */
+
+function mulai() {
+
+    const lagu =
+        document.getElementById(
+            "lagu"
+        );
+
+
+    lagu.currentTime = 0;
+
+
+    lagu.play().catch(
+        function(error) {
+
+            console.log(
+                "Audio gagal:",
+                error
+            );
+
+        }
+    );
+
+
+    document.getElementById(
+        "intro"
+    ).style.display =
+        "none";
+
+
+    document.getElementById(
+        "surprise"
+    ).style.display =
+        "block";
+
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+
+    buatConfetti();
+
+}
+
+
+/* ================================
+   CONFETTI
+================================ */
+
+function buatConfetti() {
+
+    for (
+        let i = 0;
+        i < 300;
+        i++
+    ) {
+
+        const confetti =
+            document.createElement(
+                "div"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        confetti.style.backgroundColor =
+            "hsl(" +
+            Math.random() * 360 +
+            ", 100%, 60%)";
+
+
+        confetti.style.width =
+            Math.random() * 10 +
+            5 +
+            "px";
+
+
+        confetti.style.height =
+            Math.random() * 10 +
+            5 +
+            "px";
+
+
+        confetti.style.animationDuration =
+            Math.random() * 4 +
+            3 +
+            "s";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(
+            function() {
+                confetti.remove();
+            },
+            8000
+        );
+
+    }
+
+}
+
+
+/* ================================
+   KOMENTAR
+================================ */
+
+function kirimKomentar() {
+
+    const nama =
+        document.getElementById(
+            "namaKomentar"
+        ).value.trim();
+
+
+    const pesan =
+        document.getElementById(
+            "isiKomentar"
+        ).value.trim();
+
+
+    if (
+        nama === "" ||
+        pesan === ""
+    ) {
+
+        alert(
+            "Isi nama dan pesannya dulu ya 😭"
+        );
+
+        return;
+    }
+
+
+    const komentar =
+        document.createElement(
+            "div"
+        );
+
+
+    komentar.className =
+        "komentar";
+
+
+    const namaElement =
+        document.createElement(
+            "div"
+        );
+
+
+    namaElement.className =
+        "komentar-nama";
+
+
+    namaElement.textContent =
+        "💬 " + nama;
+
+
+    const pesanElement =
+        document.createElement(
+            "div"
+        );
+
+
+    pesanElement.className =
+        "komentar-isi";
+
+
+    pesanElement.textContent =
+        pesan;
+
+
+    komentar.appendChild(
+        namaElement
+    );
+
+
+    komentar.appendChild(
+        pesanElement
+    );
+
+
+    document.getElementById(
+        "daftarKomentar"
+    ).prepend(
+        komentar
+    );
+
+
+    document.getElementById(
+        "namaKomentar"
+    ).value = "";
+
+
+    document.getElementById(
+        "isiKomentar"
+    ).value = "";
+
+}
+
+</script>
+
+</body>
+</html>
